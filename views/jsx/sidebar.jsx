@@ -120,8 +120,9 @@ ToureiroSidebar = React.createClass({
                                 return (
                                     <div key={key} className="sidebar-stat">
                                         <a href="javascript:;" onClick={_this.changeCategory.bind(_this, key)}>
-                                            {key[0].toUpperCase() + key.slice(1)} : <span className="badge">{_this.state.queue.stats[key]}</span>
+                                            {key[0].toUpperCase() + key.slice(1)}<span className="badge">{_this.state.queue.stats[key]}</span>
                                         </a>
+                                        
                                     </div>
                                 );
                             })
